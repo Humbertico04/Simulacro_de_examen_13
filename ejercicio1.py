@@ -25,13 +25,16 @@
 def checkio(text):
     lista = []
     for i in range(len(text)):
-        if text[i] == "#":
+        if text[i] == "#" and text[i-1] == " " or text[i] == "#" and i == 0:
             palabra = text[i+1:]
-            
+            for j in range(len(palabra)):
+                if palabra[j] == " ":
+                    palabra = palabra[:j]
+                    break
             if palabra[0].isalpha():
                 lista.append(palabra)
     return print(lista)
 
 
 checkio("#h6a678shtag")
-checkio("#h6a678shtag #h6a678shtag")
+checkio("hola quweqe fineoif efnei #h6a678shtag #p6a678shtag #hola #123")
