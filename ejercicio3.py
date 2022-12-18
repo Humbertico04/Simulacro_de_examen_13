@@ -25,13 +25,13 @@
 # memoria caché sea privada para esta función?
 
 def fibonacci(n):
-    cache = {}
-    if n in cache:
-        return cache[n]
-    if n == 0 or n == 1:
-        return n
-    else:
-        cache[n] = fibonacci(n-1) + fibonacci(n-2)
-        return cache[n]
+    cache={}
+    if n-1 in cache:
+        return cache[n-1]
+    cache[0]=0
+    cache[1]=1
+    for i in range(2, n):
+        cache[i] = cache[i-1] + cache[i-2]
+    return cache[n-1]
 
-print(fibonacci(50))
+print(fibonacci(500))
