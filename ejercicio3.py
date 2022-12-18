@@ -1,3 +1,4 @@
+from ast import main
 # La secuencia de Fibonacci se usa tradicionalmente para explicar la recursividad del árbol.
 # function fibonacci(n) {
 #  if(n==0 || n == 1)
@@ -35,3 +36,6 @@ def fibonacci(n):
     return cache[n-1]
 
 print(fibonacci(500))
+
+if __name__ == "__main__":
+    main()

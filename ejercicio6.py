@@ -1,3 +1,4 @@
+from ast import main
 # Escriba una rotate que gire una matriz bidimensional (una matriz) ya sea en sentido horario o
 # antihorario 90 grados y devuelva la matriz rotada.
 # La función acepta dos parámetros: una matriz y una cadena que especifica la dirección o
@@ -56,3 +57,7 @@ def rotate(matrix, direccion):
 
 print(rotate(matrix,"clockwise"))
 print(rotate(matrix,"counter-clockwise"))
+
+if __name__ == "__main__":
+    main()
+

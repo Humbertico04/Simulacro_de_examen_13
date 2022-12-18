@@ -1,3 +1,4 @@
+from ast import main
 # En algunos países de la antigua Unión Soviética existía la creencia de los boletos de la
 # suerte. Se creía que un billete de transporte de cualquier tipo traía suerte si la suma de los
 # dígitos de la mitad izquierda de su número era igual a la suma de los dígitos de la mitad
@@ -38,3 +39,6 @@ def luck_check(str):
         return False
 
 print(luck_check("1234321"))
+
+if __name__ == "__main__":
+    main()

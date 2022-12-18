@@ -1,3 +1,4 @@
+from ast import main
 # ¡Empiezas a trabajar para una nueva empresa elegante que espera revolucionar las redes
 # sociales! ¡JADEAR! Tuvieron esta gran idea de que los usuarios deberían poder especificar
 # palabras clave relevantes para sus publicaciones utilizando una idea ingeniosa al anteponer
@@ -33,8 +34,11 @@ def checkio(text):
                     break
             if palabra[0].isalpha():
                 lista.append(palabra)
-    return print(lista)
+    return lista
 
 
-checkio("#h6a678shtag")
-checkio("hola quweqe fineoif efnei #h6a678shtag #p6a678shtag #hola #123")
+print(checkio("#h6a678shtag"))
+print(checkio("hola quweqe fineoif efnei #6a678shtag #p6a678shtag #hola #123"))
+
+if __name__ == "__main__":
+    main()
